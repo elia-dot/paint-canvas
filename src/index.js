@@ -2,10 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { CanvasProvider } from './canvasContext';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <CanvasProvider>
     <App />
-  </React.StrictMode>,
+  </CanvasProvider>,
   document.getElementById('root')
 );
